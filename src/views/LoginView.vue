@@ -71,7 +71,7 @@ async function onSubmit() {
       <CardHeader class="space-y-1">
         <CardTitle class="text-xl tracking-tight">Entrar</CardTitle>
         <CardDescription>
-          Use o e-mail e a senha cadastrados no Supabase Auth.
+          Use o e-mail e a senha cadastrados pela TI.
         </CardDescription>
       </CardHeader>
       <form @submit.prevent="onSubmit">
@@ -107,7 +107,7 @@ async function onSubmit() {
             {{ errorMessage }}
           </p>
         </CardContent>
-        <CardFooter>
+        <CardFooter class="border-t border-border/60 pt-6">
           <Button type="submit" class="w-full" size="lg" :disabled="loading">
             {{ loading ? 'Entrando…' : 'Entrar' }}
           </Button>
